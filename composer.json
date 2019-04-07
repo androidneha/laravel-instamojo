@@ -1,0 +1,39 @@
+{
+  "authors": [
+    {
+      "name": "Neha Sharma",
+      "email": "neha8q@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Laravel\\Instamojo\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "description": "Laravel integration for Instamojo Payment gateway.",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Laravel\\Instamojo\\ServiceProvider"
+      ],
+      "aliases": {
+        "Instamojo": "Laravel\\Instamojo\\Facade"
+      }
+    }
+  },
+  "keywords": ["laravel", "instamojo", "integration", "payment", "instamojo-payment", "payment-gateway"],
+  "license": "MIT",
+  "name": "androidneha/laravel-instamojo",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^5.0||^6.0"
+  },
+  "require-dev": {
+    "laravel/framework": "^5.0"
+  }
+}
